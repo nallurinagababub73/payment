@@ -7,7 +7,7 @@ pipeline {
         stage ('build') {
           steps {
             sh 'echo build'
-            sh 'npm install'
+            sh 'pip3.6 install -r requirements.txt'
           }
         }
         stage ('test') {
