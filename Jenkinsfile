@@ -4,12 +4,7 @@ pipeline {
  }
 
    stages {
-        stage ('build') {
-          steps {
-            sh 'echo build'
-            sh 'pip3.6 install -r requirements.txt'
-          }
-        }
+
         stage ('test') {
           steps {
             sh 'echo test'
